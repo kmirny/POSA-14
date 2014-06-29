@@ -34,6 +34,7 @@ class SimpleAtomicLong
 	 mValue = initialValue;
  }
 
+<<<<<<< HEAD
  /**
   * @brief Gets the current value.
   * 
@@ -48,6 +49,12 @@ class SimpleAtomicLong
      mRWLock.readLock().unlock();
      return value;
  }
+=======
+    /**
+     * The ReentrantReadWriteLock used to serialize access to mValue.
+     */
+    // TODO - add the implementation
+>>>>>>> 540a6df00b82e8e3bb9b8782b489662400116393
 
  /**
   * @brief Atomically decrements by one the current value
